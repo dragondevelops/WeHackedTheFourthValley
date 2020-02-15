@@ -21,15 +21,8 @@ class MainActivity : AppCompatActivity() {
         ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), 1002)
         Radar.trackOnce { status, location, events, user ->
             // do something with status, location, events, user
-            textView.setText(location.toString())
         }
         Radar.startTracking()
-        startbutton.setOnClickListener {
-            Radar.startTracking()
-        }
-        stopbutton.setOnClickListener {
-            Radar.stopTracking()
-        }
     }
 
 }
