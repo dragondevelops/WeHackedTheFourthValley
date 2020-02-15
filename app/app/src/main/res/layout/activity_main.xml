@@ -9,6 +9,15 @@
     <TextView
             android:text="TextView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="189dp"
-            tools:layout_editor_absoluteX="94dp" android:id="@+id/textView"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="32dp"/>
+    <com.google.android.gms.maps.MapView
+            android:layout_width="352dp"
+            android:layout_height="584dp"
+            android:id="@+id/userMap"
+            app:layout_constraintTop_toTopOf="@+id/textView" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="40dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="40dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
