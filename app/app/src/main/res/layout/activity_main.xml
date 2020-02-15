@@ -13,11 +13,18 @@
             android:id="@+id/textView" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="32dp"/>
-    <com.google.android.gms.maps.MapView
-            android:layout_width="352dp"
-            android:layout_height="584dp"
-            android:id="@+id/userMap"
-            app:layout_constraintTop_toTopOf="@+id/textView" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="40dp"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="40dp"/>
+    <Button
+            android:text="Start Tracking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/startbutton" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="32dp"
+            android:layout_marginStart="32dp"/>
+    <Button
+            android:text="Stop Tracking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stopbutton"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="32dp" android:layout_marginEnd="32dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
